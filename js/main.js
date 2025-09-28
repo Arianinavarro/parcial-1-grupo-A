@@ -77,7 +77,7 @@ class ProductCard extends HTMLElement {
             justify-content: space-between;
           }
           .product-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-20px);
             box-shadow: 0 4px 10px rgba(147, 32, 209, 0.1);
           }
           .product-card img {
