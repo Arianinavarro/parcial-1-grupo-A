@@ -30,7 +30,7 @@ Se implementó un formulario de inicio de sesión (`login.html`) con validación
 
 -   **Implementación:** El script intercepta el envío del formulario, valida las credenciales contra valores predefinidos (`admin`/`password`) y gestiona la sesión del usuario.
 -   **Manejo de Sesión:** Si el login es exitoso, se utiliza `sessionStorage` para guardar un indicador de que el usuario está autenticado. La página principal (`index.html`) verifica este indicador; si no existe, redirige al usuario de vuelta a la página de login, protegiendo así el contenido.
--   **Aviso de Seguridad:** **Este método de validación es puramente educativo y NO es seguro.** En una aplicación real, la autenticación siempre debe manejarse en un servidor backend para proteger las credenciales y la lógica de negocio.
+-   **Aviso de Seguridad:** **Este método de validación es puramente educativo y NO es seguro En una aplicación real.** 
 
 ### b. Componentes Reutilizables (Fragmentos)
 El `header`, `footer` y `sidebar` se crearon como archivos HTML separados en `/components`. Son cargados dinámicamente en `index.html` mediante la función `loadComponent` en `js/main.js`, que utiliza la API `fetch`. Esta técnica, a menudo llamada "HTML Imports" a través de JS, reduce la duplicación de código y centraliza los componentes para facilitar su actualización.
