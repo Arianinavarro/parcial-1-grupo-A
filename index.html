@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería Deliciosa</title>
+    <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header id="main-header"></header>
+
+    <div class="container">
+        <aside id="main-sidebar"></aside>
+
+        <main id="main-content">
+            <h2>Nuestros Pasteles</h2>
+            
+            <section>
+                <h3>Demostración con &lt;Template&gt;</h3>
+                <div id="template-products-container" class="products-grid">
+                </div>
+            </section>
+            
+            <section>
+                <h3>Demostración con &lt;Web Components&gt;</h3>
+                <div id="wc-products-container" class="products-grid">
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer id="main-footer"></footer>
+    <template id="product-template">
+        <div class="product-card-template">
+            <img src="" alt="Imagen del producto" class="product-image">
+            <h3 class="product-name"></h3>
+            <p class="product-description"></p>
+            <p class="product-price"></p>
+        </div>
+    </template>
+
+    <script src="js/main.js"></script>
+
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
