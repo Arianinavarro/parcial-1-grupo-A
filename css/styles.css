@@ -1,0 +1,202 @@
+:root {
+    --primary-color: #fce4ec; 
+    --secondary-color: #680a47; 
+    --text-color: #131111;
+    --background-color: #ebe6f9; 
+    --border-color: #88158f;
+    --card-background: #f2d7ec;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+aside {
+    width: 215px;
+    background-color: #fff;
+    padding: 1.5rem;
+    min-height: calc(100vh - 150px); 
+    flex-shrink: 0;
+    border-left: 2px solid var(--secondary-color);
+    
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li a {
+    display: block;
+    padding: 0.75rem 0;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.2s;
+}
+
+aside nav ul li a:hover {
+    background-color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+main h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+main section {
+    margin-bottom: 2.5rem;
+}
+
+main h3 {
+    color: #121111;
+    margin-bottom: 1rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.product-card-template {
+    border: 5px solid var(--border-color);
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 5px rgba(10, 10, 10, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card-template:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-card-template img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product-card-template h3 {
+    margin: 0.5rem 0;
+    color: var(--secondary-color);
+}
+
+.product-card-template .product-price {
+    font-weight: bold;
+    color: #050305;
+    font-size: 20px;
+}
+footer {
+    background-color: #fce4ec;
+    color: rgb(17, 12, 12);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 5px solid var(--secondary-color);
+     font-size: 17px;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.login-form {
+    background: white;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 320px;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    transition: background-color 0.2s;
+}
+
+.login-form button:hover {
+    background-color: #c2136a; 
+}
+
+.error-message {
+    color: #d32f2f; 
+    background-color: #ffcdd2;
+    border: 1px solid #d32f2f;
+    border-radius: 4px;
+    padding: 0.75rem;
+    text-align: center;
+    margin-top: 1rem;
+}
