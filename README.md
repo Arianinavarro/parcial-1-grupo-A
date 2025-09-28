@@ -1,4 +1,4 @@
- Proyecto: Aplicación Web Modularizada - Repostería Deliciosa
+ Proyecto: Aplicación Web Modularizada - Repostería ARI-ANA
 
 Este proyecto es una aplicación web para una repostería, desarrollada como parte de una actividad académica para demostrar los principios de **modularización, componentización y buenas prácticas** en el desarrollo frontend con HTML, CSS y JavaScript puro.
 
@@ -74,4 +74,3 @@ Para evidenciar nuestro trabajo en equipo, gestionamos el desarrollo de este pro
     - Ejemplo: `Pull Request #5: feat: implementa lógica JavaScript completa con Web Components`.
     
 
-Este flujo de trabajo aseguró una colaboración organizada, permitió la revisión de código y mantuvo un historial limpio y comprensible del desarrollo del proyecto.
